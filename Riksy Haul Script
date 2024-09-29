@@ -1,0 +1,47 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kirill31312/Astereo-Library/main/Astereo%20UI%20Wave"))()
+local Window = OrionLib:MakeWindow({Name = "Risky Haul Script V0.1 (BETA)", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+OrionLib:MakeNotification({
+ Name = "Risky Haul Script V0.1!",
+ Content = "Use In Risky Haul Testing!",
+ Image = "rbxassetid://4483345998",
+ Time = 10
+})
+local Tab = Window:MakeTab({
+ Name = "Menu",
+ Icon = "rbxassetid://4483345998",
+ PremiumOnly = false
+})
+Tab:AddButton({
+ Name = "Infinity Fuel!",
+ Callback = function()
+ game:GetService("ReplicatedStorage").FuelConfig.Fuel.Value = 999999999999
+ game:GetService("ReplicatedStorage").FuelConfig.Fuel_Barrel.Value = 999999999999
+end
+})
+Tab:AddButton({w
+ Name = "Super Boost Engine!",
+ Callback = function()
+ game:GetService("ReplicatedStorage").EngineConfig.Engine.MaxSpeedBoost.Value = 5
+ game:GetService("ReplicatedStorage").EngineConfig.Engine.AccelerationBoost.Value = 5
+ game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.MaxSpeedBoost.Value = 5
+ game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.AccelerationBoost.Value = 5
+end
+})
+Tab:AddButton({
+ Name = "Mega Boost Engine!",
+ Callback = function()
+ game:GetService("ReplicatedStorage").EngineConfig.Engine.MaxSpeedBoost.Value = 15
+ game:GetService("ReplicatedStorage").EngineConfig.Engine.AccelerationBoost.Value = 15
+ game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.MaxSpeedBoost.Value = 15
+ game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.AccelerationBoost.Value = 15
+end
+})
+Tab:AddButton({
+ Name = "Ultra Boost Engine!",
+ Callback = function()
+ game:GetService("ReplicatedStorage").EngineConfig.Engine.MaxSpeedBoost.Value = 50
+ game:GetService("ReplicatedStorage").EngineConfig.Engine.AccelerationBoost.Value = 50
+ game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.MaxSpeedBoost.Value = 50
+ game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.AccelerationBoost.Value = 50
+end
+})
