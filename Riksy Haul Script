@@ -18,7 +18,7 @@ Tab:AddButton({
  game:GetService("ReplicatedStorage").FuelConfig.Fuel_Barrel.Value = 999999999999
 end
 })
-Tab:AddButton({w
+Tab:AddButton({
  Name = "Super Boost Engine!",
  Callback = function()
  game:GetService("ReplicatedStorage").EngineConfig.Engine.MaxSpeedBoost.Value = 5
