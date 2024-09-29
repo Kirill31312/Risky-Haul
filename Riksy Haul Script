@@ -23,8 +23,6 @@ Tab:AddButton({
  Callback = function()
  game:GetService("ReplicatedStorage").EngineConfig.Engine.MaxSpeedBoost.Value = 5
  game:GetService("ReplicatedStorage").EngineConfig.Engine.AccelerationBoost.Value = 5
- game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.MaxSpeedBoost.Value = 5
- game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.AccelerationBoost.Value = 5
 end
 })
 Tab:AddButton({
@@ -32,8 +30,6 @@ Tab:AddButton({
  Callback = function()
  game:GetService("ReplicatedStorage").EngineConfig.Engine.MaxSpeedBoost.Value = 15
  game:GetService("ReplicatedStorage").EngineConfig.Engine.AccelerationBoost.Value = 15
- game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.MaxSpeedBoost.Value = 15
- game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.AccelerationBoost.Value = 15
 end
 })
 Tab:AddButton({
@@ -41,6 +37,25 @@ Tab:AddButton({
  Callback = function()
  game:GetService("ReplicatedStorage").EngineConfig.Engine.MaxSpeedBoost.Value = 50
  game:GetService("ReplicatedStorage").EngineConfig.Engine.AccelerationBoost.Value = 50
+end
+})
+Tab:AddButton({
+ Name = "Super Boost Diesel Engine!",
+ Callback = function()
+ game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.MaxSpeedBoost.Value = 5
+ game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.AccelerationBoost.Value = 5
+end
+})
+Tab:AddButton({
+ Name = "Mega Boost Diesel Engine!",
+ Callback = function()
+ game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.MaxSpeedBoost.Value = 15
+ game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.AccelerationBoost.Value = 15
+end
+})
+Tab:AddButton({
+ Name = "Ultra Boost Diesel Engine!",
+ Callback = function()
  game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.MaxSpeedBoost.Value = 50
  game:GetService("ReplicatedStorage").EngineConfig.Diesel_Engine.AccelerationBoost.Value = 50
 end
